@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ division.division }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <button ion-item *ngFor="let club of division.clubs" (click)="goToDetailPage(club)">
+    {{ club.name }}
+  </button>
+
+</ion-content>
