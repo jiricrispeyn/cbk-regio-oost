@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ club.name }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-item>
+      <h2>{{ club.place }}</h2>
+      <p>{{ club.address }} </p>
+      <p><a href="tel:{{ club.phone }}">{{ club.phone }}</a></p>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
