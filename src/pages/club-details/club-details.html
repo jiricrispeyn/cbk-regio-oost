@@ -8,12 +8,24 @@
 
 <ion-content>
 
+  {{ window }}
+
   <ion-card>
-    <ion-item>
+
+    <div id="map" [style.width]="size.width" [style.height]="size.height"></div>
+
+    <!--<img src="{{ club.static_map }}">-->
+
+    <ion-card-content>
       <h2>{{ club.place }}</h2>
-      <p>{{ club.address }} </p>
-      <p><a href="tel:{{ club.phone }}">{{ club.phone }}</a></p>
+      <p>{{ club.address }}</p>
+    </ion-card-content>
+    
+    <ion-item>
+      <ion-icon name="call" item-left small></ion-icon>
+      <a href="tel:{{ club.phone }}">{{ club.phone }}</a>
     </ion-item>
+
   </ion-card>
 
 </ion-content>
