@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
-import { ClubDetailsPage } from '../club-details/club-details';
 
 @Component({
   selector: 'page-division-details',
@@ -17,12 +16,6 @@ export class DivisionDetailsPage {
 
   ngOnInit() {
     this.division = this.navParams.get('division');
-  }
-
-  goToDetailPage(club: any) {
-    this.navCtrl.push(ClubDetailsPage, {
-      club: club
-    });
   }
 
 }

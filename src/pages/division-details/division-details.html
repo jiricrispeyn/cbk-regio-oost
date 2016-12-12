@@ -8,8 +8,13 @@
 
 <ion-content>
 
-  <button ion-item *ngFor="let club of division.clubs" (click)="goToDetailPage(club)">
-    {{ club.name }}
-  </button>
+  <ion-list>
+    <ion-item *ngFor="let club of division.clubs">
+      <h2>{{ club.name }}</h2>
+      <h3>{{ club.place }}</h3>
+      <p>{{ club.address }}</p>
+      <p><a href="tel:{{ club.phone }}">{{ club.phone }}</a></p>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
