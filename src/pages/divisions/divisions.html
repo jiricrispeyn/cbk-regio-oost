@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Adressen
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <button ion-item *ngFor="let division of divisions" (click)="goToDetailPage(division)">
+    {{ division.division }}
+  </button>
+  
+</ion-content>
