@@ -7,8 +7,10 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DivisionsPage } from '../pages/divisions/divisions';
 import { DivisionDetailsPage } from '../pages/division-details/division-details';
-import { ClubDetailsPage } from '../pages/club-details/club-details';
 import { AddressesService } from './addresses/addresses.service';
+import { LeaguesPage } from '../pages/leagues/leagues';
+import { LeagueDetailsPage } from '../pages/league-details/league-details';
+import { LeaguesService } from './leagues/leagues.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { AddressesService } from './addresses/addresses.service';
     TabsPage,
     DivisionsPage,
     DivisionDetailsPage,
-    ClubDetailsPage
+    LeaguesPage,
+    LeagueDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -33,10 +36,12 @@ import { AddressesService } from './addresses/addresses.service';
     TabsPage,
     DivisionsPage,
     DivisionDetailsPage,
-    ClubDetailsPage
+    LeaguesPage,
+    LeagueDetailsPage
   ],
   providers: [
-    AddressesService
+    AddressesService,
+    LeaguesService
   ]
 })
 export class AppModule {}
